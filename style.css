@@ -1,0 +1,161 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{ 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav goods ads"
+      "footer footer footer";
+    grid-template-rows: 100px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+   }
+.header, .nav, .goods, .ads, .footer{
+    padding: 20px;
+   }
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    border: 3px solid hsl(30, 4%, 82%);
+   }
+.img_header{
+    height: 70px;
+    width: 70px;
+    padding: 0px 10px 0px 0px;
+   }
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+    font-size: 40px;
+   }
+.nav{
+    grid-area: nav;
+    display: grid;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+   }
+a{
+    color: black;
+    text-decoration: none;
+   }
+a:hover {
+    color: rgb(180, 60, 60); /* Цвет текста */
+   }
+.goods{
+    grid-area: goods;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;  
+   }
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid hsl(30, 4%, 82%);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+   }
+img{
+    height: 150px;
+    width: 100px;
+    padding: 10px;
+   }
+h3{
+    font-size: 16px;
+    margin: 5px;
+   }
+p{
+    font-size: 14px;
+   }
+button{
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    background-color:hsl(30, 4%, 82%);
+    border: 0;
+    border-radius: 15%;
+
+   }
+.ads{
+    grid-area: ads;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+   }
+footer{
+    grid-area: footer;
+    text-align: center;
+    border: 3px solid hsl(30, 4%, 82%);
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: center;
+   }
+
+/* Mobile */
+
+@media screen and (max-width: 768px){
+   body{ 
+      grid-template-areas: 
+        "header"
+        "nav"
+        "goods"
+        "ads"
+        "footer";
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+   }
+   .header, .nav, .goods, .ads, .footer{
+      padding: 5px;
+   }
+   .header{
+      border: 5px solid hsl(30, 4%, 82%);
+   }
+   .img_header{
+      height: 40px;
+      width: 40px;
+   }
+   h1{
+      font-size: 35px;
+   }
+   .nav{
+      font-size: 25px;
+   }
+   .goods{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 5px;  
+   }
+   .cards{
+      box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2); 
+   }
+   img{
+      height: 250px;
+      width: 200px;
+   }
+   h3{
+      font-size: 25px;
+   }
+   p{
+      font-size: 23px;
+   }
+   button{
+      font-size: 25px;
+   }
+   .ads{
+      font-size: 30px;
+   }
+   footer{
+      font-size: 25px;
+   }
+}
