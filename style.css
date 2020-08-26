@@ -101,3 +101,61 @@ footer{
     justify-content: center;
    }
 
+/* Mobile */
+
+@media screen and (max-width: 768px){
+   body{ 
+      grid-template-areas: 
+        "header"
+        "nav"
+        "goods"
+        "ads"
+        "footer";
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+   }
+   .header, .nav, .goods, .ads, .footer{
+      padding: 5px;
+   }
+   .header{
+      border: 5px solid hsl(30, 4%, 82%);
+   }
+   .img_header{
+      height: 40px;
+      width: 40px;
+   }
+   h1{
+      font-size: 35px;
+   }
+   .nav{
+      font-size: 25px;
+   }
+   .goods{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 5px;  
+   }
+   .cards{
+      box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2); 
+   }
+   img{
+      height: 250px;
+      width: 200px;
+   }
+   h3{
+      font-size: 25px;
+   }
+   p{
+      font-size: 23px;
+   }
+   button{
+      font-size: 25px;
+   }
+   .ads{
+      font-size: 30px;
+   }
+   footer{
+      font-size: 25px;
+   }
+}
