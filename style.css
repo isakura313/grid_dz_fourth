@@ -1,0 +1,36 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav article asd"
+      "footer footer footer";
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 30% 2fr 15%;
+    grid-gap: 20px;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Do Hyeon', sans-serif;
+    }
+  header, footer, article, nav, div {
+    padding: 20px;
+    background: whitesmoke;
+  }
+  .header {
+    grid-area: header;
+  }
+  .footer {
+   display: flex;
+   grid-column: 1/4;
+  }
+  .footer img{
+    width: 30px;
+  }
+  .article { 
+    grid-area: article;      
+    }
+  .nav { 
+    grid-area: nav; 
+    }
+  .aside { 
+    grid-area: ads; 
+    }
