@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 25px;
+}
+
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-content: center;
+}
+
+.header, .footer {
+    background-color: #F2C94C;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.company-name {
+    margin-left: 5px;
+}
+
+.nav, .ads {
+    background-color: #6FCF97;
+    color: black;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu-item-a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.article {
+    padding: 20px;
+}
+
+.section {
+    padding: inherit;
+}
+
+.acrticle-img {
+    width: 100%;
+}
+
+.footer .menu {
+    display: flex;
+}
+
+.footer .menu-item {
+    margin: 0 100px;
+}
+
+.footer .menu-item-a {
+    color: black;
+}
