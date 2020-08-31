@@ -1,3 +1,5 @@
+@import 'norm.css';
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -16,7 +18,7 @@ h2 {
 
 .wrapper-grid {
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 15% 70% 15%;
     justify-content: center;
 }
 
@@ -67,7 +69,7 @@ h2 {
     padding: inherit;
 }
 
-.acrticle-img {
+.article-img {
     width: 100%;
 }
 
@@ -76,9 +78,109 @@ h2 {
 }
 
 .footer .menu-item {
-    margin: 0 100px;
+    margin: 0 10px;
 }
 
 .footer .menu-item-a {
     color: black;
+}
+
+.footer .contacts {
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+
+    body {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+
+    .wrapper-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .header {
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .header .contacts {
+        display: none;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+
+    .menu-item-a {
+        font-size: 15px;
+    }
+
+    .ads {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .footer {
+        grid-column: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .footer .menu-item {
+        margin: 10px;
+    }
+
+    .footer .contacts {
+        font-size: 10px;
+    }
+
+
+}
+
+@media screen and (max-width:320px) {
+
+    .footer {
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .footer .menu-item {
+        margin: 10px;
+    }
+
+    .footer .contacts {
+        grid-column: 1/3;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
 }
