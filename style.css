@@ -1,0 +1,75 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav article asd"
+      "footer footer footer";
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 30% 2fr 15%;
+    grid-gap: 20px;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lexend Peta', sans-serif;
+    }
+  header, footer, article, nav, div {
+    padding: 20px;
+    background: whitesmoke;
+  }
+  .header {
+    grid-area: header;
+  }
+  .footer {
+   display: flex;
+   grid-column: 1/4;
+  }
+  .footer img{
+    width: 30px;
+  }
+  .article { 
+    grid-area: article;      
+    }
+  .nav { 
+    grid-area: nav; 
+    }
+  .aside { 
+    grid-area: ads; 
+    }
+
+        /* для телефонов */
+@media screen and (max-width: 768px){
+  body { 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav article asd"
+      "footer footer footer";
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      font-family: 'Lexend Peta', sans-serif;
+  }
+
+      header, footer, article, nav, div {
+        padding: 5px;
+        background: whitesmoke;
+        
+      }
+        .header {
+          font-size: 25px;
+        }
+        .footer {
+         display: flex;
+         grid-column: 1/4;
+        }
+        .footer{
+          font-size: 25px;
+        }
+        .article { 
+          font-size: 25px;    
+          }
+        .nav { 
+          font-size: 25px;
+          }
+        .aside { 
+          font-size: 25px;
+          }
