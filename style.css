@@ -1,0 +1,82 @@
+body
+{
+    display: grid;
+    grid-row: 1fr 1fr 1fr  ;
+    margin: 0
+}
+header
+{
+    display: grid;
+    grid-template: 1fr/ 1fr 10px 1fr 10px 1fr;
+}
+.hed_button
+{
+    height: 50px;
+    background-color: #00BFFF;
+    border-radius: 5px ;
+    border-width: 0px;
+    color: white;
+    font-size: 10pt ;
+    font-weight: bolder;
+    margin: 5px;
+    font-family: 'Fira Sans', sans-serif;
+}
+main
+{
+    display: grid;
+    grid-template-columns: 250px 10px 1fr 10px 100px;
+}
+article
+{
+    background-image: url(back1.jpg);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto 350px 250px auto;
+}
+.art_about{
+    display: flex;
+    text-align: left;
+    width: 90%;
+    color: white;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+.about
+{
+    border-radius: 5px;
+}
+footer
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    font-size: 9pt;
+    background-color: #00BFFF;
+    margin: 0
+}
+.p_foot
+{
+    color: white;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+nav
+{
+    background-color: rgba(0, 0, 255, 0.164);
+    display: grid;
+    grid-template-rows: repeat 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 5px;
+    color: white;
+}
+.nav_white
+{
+    background-color: white;
+}
+aside
+{
+    font-family: 'Fira Sans', sans-serif;
+}
