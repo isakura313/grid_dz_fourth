@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header" id="top">
             <h1>Lorem Blog</h1>
         </header>
         <nav class="menu">
@@ -17,7 +18,7 @@
                 <li><a href="#">Статьи</a>
                 <li><a href="#about">Об авторе</a>
             </ul>
-            <ul>
+            <ul style="border-top: 1px solid #ccc;">
                 <li><a href="#ar0">Lorem&nbsp;#0</a>
                 <li><a href="#ar1">Lorem&nbsp;#1</a>
                 <li><a href="#ar2">Lorem&nbsp;#2</a>
@@ -62,15 +63,20 @@
         </div>
         <div class="banners">
             <h4>Немного рекламы</h4>
-            <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
-            <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
-            <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
-            <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
+            <div class="flex_wrap">
+                <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
+                <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
+                <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
+                <a href="https://www.amazon.com/Xbox-Wireless-Controller-Grey-Green-one/dp/B074FBKCMB/"><img src="https://images-na.ssl-images-amazon.com/images/I/61-YAQOGS6L._SL1200_.jpg"></a>
+            </div>
         </div>
-        <footer class="about">
+        <footer class="about" id="about">
             <h4>Об авторе</h4>
             <p>Николай Микулин / telegram: @mikulin</p>
         </footer>
+    </div>
+    <a class="back_to_top" href="#top">
+        🡑
     </div>
 </body>
 </html>
