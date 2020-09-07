@@ -1,18 +1,34 @@
-body {
-    display: grid;
-    grid-template-areas: "header header header" "nav article ads" "footer footer footer";
-    grid-template-rows: 10% 1fr 10%;
-    grid-template-columns: 15% 1fr 15%;
-    grid-gap: 10px;
-    height: 100vh;
-    margin: 0;
+@import "norm.css"; 
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas: "header header header" "nav article ads" "footer footer footer";
+        grid-template-rows: 10% 1fr 10%;
+        grid-template-columns: 15% 1fr 15%;
+        grid-gap: 10px;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #mainNav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .naviLinks {
+        display: flex;
+        flex-direction: column;   
+    }
+
 }
 
 header, footer, article, nav, div {
     padding-left: 10px;
     padding-right: 10px;
-    background: steelblue;
-    font-family: 'Lobster', cursive;
+    background: burlywood;
+    font-family: 'Roboto Slab', serif;
 
 }
 
@@ -24,22 +40,13 @@ header, footer, article, nav, div {
     grid-area: article;
 }
 
-#mainNav {
-    grid-area: nav;
-    display: grid;
-    align-items: baseline;
-    grid-auto-rows: min-content;
 
-
-}
 
 #siteAds {
     grid-area: ads;
     display: grid;
     align-items: baseline;
     grid-auto-rows: min-content;
-
-
 }
 
 .navi {
@@ -52,9 +59,12 @@ header, footer, article, nav, div {
     color: darkred;
 }
 
+
+
 h1,
 h2 {
     text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
 .d_inferno table {
@@ -87,4 +97,29 @@ h2 {
 .social_links_img {
     grid-area: social;
     max-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas: "header" "nav" "article" "ads" "footer";
+        grid-template-rows: 1fr 1fr 7fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        height: 50vh;
+        margin: 0;
+    }
+
+    #mainNav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .naviLinks {
+        display: flex;
+        justify-content: center;
+    }
+
 }
