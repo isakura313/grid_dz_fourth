@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(120px, 180px) 1fr minmax(150px, 200px);
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+}
+
+header {
+  display: grid;
+  align-items: center;
+  background-color: rgb(38, 38, 38);
+  color: white;
+  padding-left: 40px;
+  height: 80px;
+  font-size: 28px;
+}
+
+nav {
+  background-color: rgb(38, 38, 38);
+  color: #fff;
+}
+
+.menu__item {
+  display: grid;
+  align-items: center;
+  height: 60px;
+}
+
+.menu__link {
+  padding-left: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.menu__link i {
+  padding-right: 5px;
+}
+
+.menu__link:hover {
+    color: #aee8df
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 260px 80px;
+  align-items: center;
+  background: url("../img/clouds.jpg") center center/cover no-repeat;
+  padding-left: 60px;
+  color: #fff;
+}
+
+.content__header {
+  font-size: 32px;
+}
+.content__text {
+  font-size: 20px;
+  max-width: 800px;
+}
+
+.ads {
+  display: grid;
+  grid-template-rows: repeat(4, 190px);
+}
+
+.ads__content {
+  overflow: hidden;
+}
+.ads__content img {
+  width: 400px;
+  object-fit: fit;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 80px;
+  align-items: center;
+  background-color: rgb(38, 38, 38);
+  color: #fff;
+}
+
+.footer__content {
+    padding-left: 140px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.contact {
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+.team {
+    grid-column-start:2;
+    grid-column-end:3;
+}
+
+.testimonials {
+    margin-top: 40px;
+    grid-column-start:3;
+    grid-column-end:4;
+}
