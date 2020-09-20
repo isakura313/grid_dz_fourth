@@ -43,6 +43,7 @@ header {
 .mobile__menu__btn span::before,
 .mobile__menu__btn span::after {
   content:'';
+  transition: 0.5s;
 }
 
 .mobile__menu__btn span::before {
