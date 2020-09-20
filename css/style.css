@@ -116,7 +116,7 @@ footer {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 769px) {
   .ads, nav {
     display: none;
   }
@@ -134,10 +134,8 @@ footer {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
-}
 
-@media screen and (max-width: 1025px){
-  .content {
-    grid-template-columns: 600px;
+  .footer__content {
+    font-size: 24px;
   }
 }
