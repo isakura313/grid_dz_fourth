@@ -11,6 +11,14 @@ body {
   grid-template-rows: 120px auto auto;
 }
 
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 header {
   display: grid;
   grid-template-columns: auto 80px;
@@ -146,7 +154,7 @@ footer {
 
 
 @media (max-width: 769px) {
-  .ads, nav {
+  .ads, nav{
     display: none;
   }
 
@@ -159,6 +167,9 @@ footer {
     grid-template-rows: 100vh;
   }
 
+  nav {
+    font-size: 28px;
+  }
   .content {
     grid-template-columns: auto;
   }
