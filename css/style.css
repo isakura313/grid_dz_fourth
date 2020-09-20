@@ -54,6 +54,16 @@ header {
   transform: translateY(15px);
 }
 
+.mobile__menu__btn-active span {
+  height: 0;
+}
+.mobile__menu__btn-active span::before {
+  transform: rotate(400deg);
+}
+.mobile__menu__btn-active span::after {
+  transform: rotate(-400deg);
+}
+
 main {
   display: grid;
   grid-template-columns: 180px auto 160px;
