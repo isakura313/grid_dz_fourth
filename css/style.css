@@ -116,7 +116,7 @@ footer {
 
 
 
-@media screen and (max-width: 769px) {
+@media (max-width: 769px) {
   .ads, nav {
     display: none;
   }
