@@ -126,8 +126,12 @@ footer {
   }
 
   main {
-    grid-template-columns: auto;
+    grid-template-columns: 768px;
     grid-template-rows: 100vh;
+  }
+
+  .content {
+    grid-template-columns: auto;
   }
 
   .footer__content__wrapper  {
