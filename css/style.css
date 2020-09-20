@@ -26,15 +26,33 @@ header {
 
 .mobile__menu__btn {
   display: none;
+  position: relative;
 }
 
-.mobile__menu__btn i{
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 40px;
-  display: block;
+.mobile__menu__btn span,
+.mobile__menu__btn span::before,
+.mobile__menu__btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -4px;
+  left: 50%; margin-left: -20px;
+  width: 40px;
+  height: 8px;
+  background-color: #fff;
 }
+
+.mobile__menu__btn span::before,
+.mobile__menu__btn span::after {
+  content:'';
+}
+
+.mobile__menu__btn span::before {
+  transform: translateY(-15px);
+}
+
+.mobile__menu__btn span::after {
+  transform: translateY(15px);
+}
+
 main {
   display: grid;
   grid-template-columns: 180px auto 160px;
