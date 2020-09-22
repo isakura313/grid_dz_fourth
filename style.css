@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 80vh 120px;
+ }
+
+header{
+    background-color: rgb(176, 115, 233);
+    width: 100%;
+    height: 50px;
+}
+.logo{
+    text-align: center;
+    font-style: Verdana;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;  
+}
+
+main{
+    display: grid;
+    grid-template-columns: 160px auto 120px;
+
+}
+
+nav{
+    background-color: rgb(244, 240, 247);
+    text-align:left;
+     
+}
+nav a{
+text-decoration: none;
+color: black;
+font-weight: normal;
+
+}
+nav li{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.article{
+    background: url("img/f-Yoga.jpg") center center/cover no-repeat;
+
+    text-align:left;
+}
+.article h2{
+    margin-top: 60px;
+margin-left: 40px;
+}
+
+.article p{
+    margin-top: 20px;
+    color: black;
+    max-width: 600px;
+    margin-left: 80px;
+}
+.ads{
+    background-color: rgb(244, 240, 247);
+    text-align:left;
+}
+footer{
+    background-color: rgb(176, 115, 233);
+    width: 100%;
+}
+.footer_content{
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-around;
+}
