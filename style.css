@@ -73,3 +73,31 @@ footer{
     grid-template-columns: repeat(3,auto);
     justify-content: space-around;
 }
+
+@media (max-width: 769px){
+    .wrapper {
+        grid-template-rows: auto auto 120px;
+     }
+    main {
+        grid-template-columns: 768px;
+        grid-template-rows: 200px 100vh;
+      }
+
+
+    nav{
+        text-align: center;
+         
+    }
+
+    nav ul{
+        text-align: center;
+        list-style: none;
+         
+    }
+
+    .ads {
+        display: none;
+    }
+
+
+}
