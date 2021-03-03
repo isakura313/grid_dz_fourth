@@ -19,7 +19,6 @@
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color:rgb(29, 23, 58);
-
 }
 .nav_welcome{
     border-radius: 5px;
@@ -53,7 +52,7 @@
 .hero_title{
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
-    padding: 100px 600px 0px 100px;
+    padding: 100px 300px 0px 30px;
 }
 .phone{
     font-size: 22px;
@@ -72,9 +71,7 @@ h2{
     color:rgb(29, 23, 58);
     display: flex;
     justify-content: left;
-
 }
-
 article{
     display: grid;
     grid-template-columns: 40% 60%;
@@ -164,5 +161,104 @@ footer{
 }
 .nav_foot img{
     width: 80%;
+}
+@media screen and (max-width: 700px){
+    .nav{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 5% 45% 15% 35%;
+        grid-row-gap: 15px;
+        align-items: center;
+        font-size:24px;
+    }
+    .nav_welcome{
+        border-radius: 10px;
+        width: 220px;
+        height: 80px;
+        padding: 30px;
+        font-size: 30px;
+    }
+    .hero{
+        height: 350px;
+        margin-top: 0;
+        background-size: cover;
+    }
+    .phone{
+        font-size: 30px;
+    }
+    h1, h2{
+        font-size: 36px;
+    }
+    .nav_article a{
+        font-size: 30px;
+    }
+    .hero_title{
+        font-size: 30px;
+        padding: 10px 300px 0px 10px;
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        margin: 15px 100px 100px 100px;
+    }
+    .menu{
+        margin: 10px 20px 20px 10px;
+        padding: 10px;
+        display: grid;
+        grid-row-gap: 15px;
+    }
+    .menu button{
+        border-radius: 10px;
+        width: 450px;
+        height: 80px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+    h1{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px 0 10px;
+    }
+    .nav_article{
+        padding: 10px 0 30px 30px;
+        display: grid;
+        grid-row-gap:55px;
+        background-size: 1200px;
+  
+    }
+    .article1{
+        padding: 70px 10px 20px 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap:30px;
+        grid-column-gap: 50px;
+        grid-template-columns: 50% 50%;
+    }
+    .hero1{
+        height: 260px;
+    }
+    footer{
+        margin: 30px 10px 15px 10px;
+    }
+    .nav_foot{
+        display: grid;
+        grid-template-columns: 4% 26% 30% 12% 28%;
+        align-items: center;
+    }
+    .nav_foot .phone{
+        font-size: 24px;
+    }
+    .hero2{
+        background-image: url(https://t3.ftcdn.net/jpg/01/98/01/02/240_F_198010242_hFHIRMPc1XJIk0yrLW6jCLRN6dLJNmVv.jpg);
+        height: 50px;
+        background-size: contain;
+    }
 }
 
