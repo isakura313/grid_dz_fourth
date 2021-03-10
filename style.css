@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+header{
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1;
+    height: 250px;
+    background-color:#D9F0F7;
+
+}
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header div{
+    width: 30%;
+}
+.header img{
+    width: 60%;
+    margin-left: 10%;
+}
+
+h1{
+    width: 40%; 
+    font-weight: bolder;
+   font-stretch: ultra-expanded;
+   font-size: 60px;
+   text-align: right;
+   font-family: 'Playfair Display', serif;
+   margin-top: 5%;
+}
+
+h2{
+    font-weight: bolder;
+   font-stretch: ultra-expanded;
+   font-size: 40px;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-weight: bolder;
+   font-stretch: ultra-expanded;
+   font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+}
+
+h4{
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+    font-size: 30px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+p{
+    align-self: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: solid;
+}
+
+.nav{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2/8;
+    background-color:#BAE0DF;
+    
+}
+
+.card a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_img_1{
+    background-image: url(https://pbs.twimg.com/media/ECraFfHWsAESKsh.jpg:large);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 150px;
+    width: 220px;
+}
+
+.card_img_2{
+    background-image: url(https://sun1-90.userapi.com/c852036/v852036673/165cd9/KP3br4E9nzo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 150px;
+    width: 220px;
+}
+
+.card_img_3{
+    background-image: url(https://irbis.spb.ru/imgtourizm2/aHR0cHM6Ly93d3cuc3BvcnQucnUvYWkvMzB4MTYwMDAvNDczOTgzL2hlYWRfMC5qcGc=);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    width: 670px;
+}
+
+.card_img_4{
+    background-image: url(https://stockholm2021.se/wp-content/uploads/2020/02/WFS_2021_graphic_element_head-2048x1478.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 160px;
+    width: 270px;
+}
+
+.card_title{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.card_text{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.article{
+    display: grid;
+    grid-column: 2/5;
+    grid-row: 2/8;
+    background-color:  #BAE0DF;
+    
+}
+
+.card_article{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin: 0em 0em 0em;
+    padding: 1em;
+}
+
+.card_article a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_title_article{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.card_text_article{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.ads{
+    display: grid;
+    grid-column: 5;
+    grid-row: 2/8;
+    background-color:#BAE0DF;
+}
+
+.card_ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_title_ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 3%;
+}
+
+.card_text_ads p{
+    align-self:f center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 23px;
+    margin: 4%;
+}
+
+.footer{
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 8;
+    background-color: #BAE0DF;
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: black;
+    margin-top: 5px;
+}
+
+
+@media screen  and (max-width: 700px){
+    h1{
+       font-size: 25px;
+    }
+    
+    h2{
+       font-size: 20px;
+    }
+    
+    h3{
+       font-size: 11px;
+    }
+    
+    h4{
+        font-size: 13px;
+    }
+    
+    p{
+        display:none;
+    }
+
+    header{
+        grid-column: 1;
+        /* grid-row: 1; */
+        height: 90px;
+    }  
+
+    .header div{
+        width: 40%;
+    }
+
+    .header img{
+        width: 80%;
+    }
+
+    .nav{
+        grid-column: 1;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card_img_1{
+        height: 150px;
+        width: 220px;
+    }
+    
+    .card_img_2{
+        height: 150px;
+        width: 220px;
+        align-items: center;
+    }
+    
+    .card_img_3{
+        height: 150px;
+        width: 220px;
+        align-items: center;
+    }
+    
+    .card_img_4{
+        height: 150px;
+        width: 220px;
+        align-items: center;
+    }
+
+    .article{
+        grid-column: 1;
+        grid-row: 3;
+        align-items: center;
+    }
+
+    .ads{
+        grid-column: 1;
+        grid-row: 4;
+        align-items: center;
+    }
+    .ads p{
+        display: initial;
+        font-size: 10px;
+        margin: 3px;
+        align-items: center;
+    }
+
+    .footer{
+        grid-column: 1;
+        grid-row: 5;
+        align-items: center;
+    }
+
+    .footer p {
+        font-size: 7px;
+    }
+
+}
