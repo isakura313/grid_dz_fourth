@@ -16,7 +16,7 @@ header{
     grid-column: 1/6;
     grid-row: 1;
     height: 250px;
-    background-color: rgb(155, 182, 182);
+    background-color:#D9F0F7;
 
 }
 
@@ -25,11 +25,12 @@ header{
     justify-content: flex-start;
 }
 
-.header img{
+.header div{
     width: 30%;
-    height: 96%;
-    margin-top: 6px;
-    margin-left: 6px;
+}
+.header img{
+    width: 60%;
+    margin-left: 10%;
 }
 
 h1{
@@ -79,15 +80,15 @@ a {
     display: grid;
     grid-column: 1;
     grid-row: 2/8;
-    background-color:  rgb(190, 213, 233);
+    background-color:#BAE0DF;
     
 }
 
-.nav card{
+.card a{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 4%;
 }
 
 .card_img_1{
@@ -104,7 +105,6 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-left: 3%;
     height: 150px;
     width: 220px;
 }
@@ -114,7 +114,6 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-left: 3%;
     height: 500px;
     width: 670px;
 }
@@ -124,8 +123,6 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-top: 6px;
-    margin-bottom: 5px;
     height: 160px;
     width: 270px;
 }
@@ -150,7 +147,7 @@ a {
     display: grid;
     grid-column: 2/5;
     grid-row: 2/8;
-    background-color:  rgb(155, 182, 182);
+    background-color:  #BAE0DF;
     
 }
 
@@ -160,6 +157,13 @@ a {
     width: 100%;
     margin: 0em 0em 0em;
     padding: 1em;
+}
+
+.card_article a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_title_article{
@@ -178,33 +182,144 @@ a {
 }
 
 .ads{
-
     display: grid;
     grid-column: 5;
     grid-row: 2/8;
-    background-color: rgb(190, 213, 233);
+    background-color:#BAE0DF;
 }
 
-.new{
+.card_ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_title_ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 3%;
+}
+
+.card_text_ads p{
     align-self:f center;
     font-family: 'Philosopher', sans-serif;
-    font-size: 20px;
-    margin: 10px;
-
+    font-size: 23px;
+    margin: 4%;
 }
+
 .footer{
     display: grid;
     grid-column: 1/6;
     grid-row: 8;
-    background-color:  rgb(155, 182, 182);
+    background-color: #BAE0DF;
 }
 
-.footer_text {
+.footer p{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: center;
     font-family: 'Playfair Display', serif;
     font-size: 15px;
     color: black;
     margin-top: 5px;
+}
+
+
+@media screen  and (max-width: 700px){
+    h1{
+       font-size: 25px;
+    }
+    
+    h2{
+       font-size: 20px;
+    }
+    
+    h3{
+       font-size: 11px;
+    }
+    
+    h4{
+        font-size: 13px;
+    }
+    
+    p{
+        display:none;
+    }
+
+    header{
+        grid-column: 1;
+        /* grid-row: 1; */
+        height: 90px;
+    }  
+
+    .header div{
+        width: 40%;
+    }
+
+    .header img{
+        width: 80%;
+    }
+
+    .nav{
+        grid-column: 1;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card_img_1{
+        height: 150px;
+        width: 220px;
+    }
+    
+    .card_img_2{
+        height: 150px;
+        width: 220px;
+        align-items: center;
+    }
+    
+    .card_img_3{
+        height: 150px;
+        width: 220px;
+        align-items: center;
+    }
+    
+    .card_img_4{
+        height: 150px;
+        width: 220px;
+        align-items: center;
+    }
+
+    .article{
+        grid-column: 1;
+        grid-row: 3;
+        align-items: center;
+    }
+
+    .ads{
+        grid-column: 1;
+        grid-row: 4;
+        align-items: center;
+    }
+    .ads p{
+        display: initial;
+        font-size: 10px;
+        margin: 3px;
+        align-items: center;
+    }
+
+    .footer{
+        grid-column: 1;
+        grid-row: 5;
+        align-items: center;
+    }
+
+    .footer p {
+        font-size: 7px;
+    }
+
 }
