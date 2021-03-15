@@ -185,18 +185,14 @@ margin-bottom: 50px;
     .header{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
-        font-size: 15px;
+    }
+    h1{
+        font-size: 30px;
+        font-family: Roboto;
+        font-weight: 700;
     }
     .header img{
         display: none;
-    }
-    .nav{
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        margin-left: 10px;
-    }
-    .nav img{
-        width: 50%;
     }
     .article{
         grid-area: article;
@@ -205,6 +201,14 @@ margin-bottom: 50px;
        /* grid-template-rows: repeat(2, 1fr);*/
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
+    }
+    .nav{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 10px;
+    }
+    .nav img{
+        width: 50%;
     }
     .ads{
         display: none;
