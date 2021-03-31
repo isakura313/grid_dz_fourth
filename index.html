@@ -12,6 +12,7 @@
 <body>
     <header class="header">
             <div class="top_header">
+                <div class="header_logo_mobile"></div>
                 <div class="header_search">
                     <div class="header_search__icon"></div>
                     <p class="header_titles header_search__title">Поиск</p>
@@ -29,6 +30,12 @@
                     <div class="header_cart__icon"></div>
                     <p class="header_titles header_cart__title">Корзина</p>
                 </div>
+                <div class="wrapper_mobile__icons">
+                    <div class="header_search__icon"></div>
+                    <div class="header_login__icon"></div>
+                    <div class="header_favorites__icon"></div>
+                    <div class="header_cart__icon"></div>
+                </div>
             </div>
             <div class="bottom_header"></div>
     </header>
@@ -37,23 +44,24 @@
             <a href="" class="a__breadcrumb_list breadcrumb_list__item1">Главная</a>
             <a href="" class="a__breadcrumb_list breadcrumb_list_item2">Уход за лицом</a>
         </div>
-        <div class="hero"></div>
+        <div class="hero_box"><img src="elements/big-banner.png" alt="" class="hero"></div>
         <div class="main_title">
             <h1 class="main_title__h1">Уход за лицом</h1>
             <p class="main_title__p">1 879 товаров</p>
         </div>
         <div class="main_wrapper">
-            <nav class=wrapper_nav>
+            <p class="wrapper_nav__title_mobile">Категория</p>
+            <nav class="wrapper_nav">
                 <p class="wrapper_nav__title">Категория</p>
-                <a href="" class="wrapper_nav__item">Отчищение и умывание</a>
-                <a href="" class="wrapper_nav__item">Увлажнение и питание</a>
-                <a href="" class="wrapper_nav__item">Маски</a>
-                <a href="" class="wrapper_nav__item">Патчи</a>
-                <a href="" class="wrapper_nav__item">Лосьоны</a>
-                <a href="" class="wrapper_nav__item">Демакияж</a>
-                <a href="" class="wrapper_nav__item">Скрабы</a>
-                <a href="" class="wrapper_nav__item">Средства для проблемной кожи</a>
-                <a href="" class="wrapper_nav__item">Наборы средств для лица</a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Отчищение и умывание</div><div class="scrol_mobile scrol_mobile__first">Отчищение&nbspи&nbspумывание</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Увлажнение и питание</div><div class="scrol_mobile">Увлажнение&nbspи&nbspпитание</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Маски</div><div class="scrol_mobile">Маски</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Патчи</div><div class="scrol_mobile">Патчи</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Лосьоны</div><div class="scrol_mobile">Лосьоны</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Демакияж</div><div class="scrol_mobile">Демакияж</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Скрабы</div><div class="scrol_mobile">Скрабы</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Средства для проблемной кожи</div><div class="scrol_mobile">Средства&nbspдля&nbspпроблемной&nbspкожи</div></a>
+                <a href="" class="wrapper_nav__item"><div class="item__desktop">Наборы средств для лица</div><div class="scrol_mobile scrol_mobile__last">Наборы&nbspсредств&nbspдля&nbspлица</div></a>
             </nav>
             <div class="wrapper_cards">
                 <a href="" class="wrapper_cards__link">
@@ -62,9 +70,10 @@
                         <img src="./elements/1.png" alt="" class=card_img>
                         <p class="card_price">599 ₽</p>
                         <p class="card_brand">Limoni</p>
-                        <p class="card_desc">Limoni Интенсивно увлажняющий,питательный крем для век и ухода за кожей вокруг глаз с морским коллагеном, эффект лифтинг, 25 мл</p>
+                        <p class="card_desc">Limoni Интенсивно увлажняющий, питательный крем для век и ухода за кожей вокруг глаз с морским коллагеном, эффект лифтинг, 25 мл</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
                 <a href="" class="wrapper_cards__link">
                     <div class="wrapper_card">
@@ -75,6 +84,7 @@
                         <p class="card_desc">Сыворотка под мезороллер для лица с пептидом SYN-AKE 3%(аналогом ботокса), низкомолекулярной и среднемолекулярной гиалуроновой кислотой, и фильтратом секреции улитки, 14мл</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
                 <a href="" class="wrapper_cards__link">
                     <div class="wrapper_card">
@@ -85,6 +95,7 @@
                         <p class="card_desc">Limoni Сыворотка для лица интенсивно увлажняющая с коллагеном и гиалуроновой кислотой для ежедневного ухода, 25 мл</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
                 <a href="" class="wrapper_cards__link">
                     <div class="wrapper_card">
@@ -95,6 +106,7 @@
                         <p class="card_desc">Likato Professional / Маска для лица - гиалуроновое восстановление. Ухаживающая серия. 50 мл.</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
                 <a href="" class="wrapper_cards__link">
                     <div class="wrapper_card">
@@ -105,6 +117,7 @@
                         <p class="card_desc">Likato Professional / Сыворотка с салициловой кислотой (Sa 2%) для кожи, склонной к акне. 30 мл</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
                 <a href="" class="wrapper_cards__link">
                     <div class="wrapper_card">
@@ -115,6 +128,7 @@
                         <p class="card_desc">Витаминная сыворотка для лица с ниацинамидом, фолиевой и молочной кислотой, витамином Е, С, и бета-каротином (провитамином А), 30мл.</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
                 <a href="" class="wrapper_cards__link">
                     <div class="wrapper_card">
@@ -125,6 +139,7 @@
                         <p class="card_desc">Beauty factor Патчи с морскими водорослями 84гр/60шт</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
                 <a href="" class="wrapper_cards__link">
                     <div class="wrapper_card">
@@ -135,8 +150,9 @@
                         <p class="card_desc">Гиалуроновая кислота и В5 - ежедневная увлажняющая антивозрастная лифтинг-сыворотка для лица, 30мл</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
-                <a href="" class="wrapper_cards__link">
+                <a href="" class="wrapper_cards__link wrapper_cards__link__uneven">
                     <div class="wrapper_card">
                         <div class="card_border"></div>
                         <img src="./elements/9.png" alt="" class=card_img>
@@ -145,6 +161,7 @@
                         <p class="card_desc">ETUDE HOUSE Скраб для лица Baking Powder Crunch Pore Scrub 6 шт + Пенка для умывания Baking Powder BB Deep Cleansing Foam 30 мл</p>
                         <button class="card_btn">Купить</button>
                     </div>
+                    <button class="card_btn__mobile">Купить</button>
                 </a>
             </div>
             <div class="ads">
@@ -156,6 +173,9 @@
         </div>
         <div class="main_bottom">
             <div class="main_bottom__border"></div>
+            <a href="">
+                <button class="btn_go_mobile">Далее</button>
+            </a>
             <div class="bottom_btns">
                 <a href="">
                     <button class="btn_numder selected_btn">1</button>
@@ -173,22 +193,22 @@
                     <button class="btn_numder">5</button>
                 </a>
                 <a href="">
-                    <button class="btn_numder">6</button>
+                    <button class="btn_numder btn_numder__mobile_hide">6</button>
                 </a>
                 <a href="">
-                    <button class="btn_numder">7</button>
+                    <button class="btn_numder btn_numder__mobile_hide">7</button>
                 </a>
                 <a href="">
-                    <button class="btn_numder">8</button>
+                    <button class="btn_numder btn_numder__mobile_hide">8</button>
                 </a>
                 <a href="">
-                    <button class="btn_numder">9</button>
+                    <button class="btn_numder btn_numder__mobile_hide">9</button>
                 </a>
                 <a href="">
-                    <button class="btn_numder">10</button>
+                    <button class="btn_numder btn_numder__mobile_hide">10</button>
                 </a>
                 <a href="">
-                    <button class="btn_numder">11</button>
+                    <button class="btn_numder btn_numder__mobile_hide">11</button>
                 </a>
                 <p class="between_btn">...</p>
                 <a href="">
@@ -223,6 +243,7 @@
                     <a href="" class="footer_link">Способы оплаты</a>
                 </div>
                 <div class="footer__colomn_3">
+                    <p class="footer_title__mobile">Телефон</p>
                     <p class="footer_contacts footer__tel">+7 (495)424-96-14</p>
                     <p class="footer_title">E-MAIL</p>
                     <p class="footer_contacts footer__email">info@ibeauty.ru</p>
@@ -233,6 +254,7 @@
                     </div>
                 </div>
                 <div class="footer__colomn_4">
+                    <p class="footer_title__mobile">Способы оплаты</p>
                     <p class="footer_des">Вы можете оплатить покупки он-лайн на сайте или произвести оплату наличными / банковской картой при их получении. </p>
                     <div class="footer_money">
                         <div class="footer__visa"></div>
